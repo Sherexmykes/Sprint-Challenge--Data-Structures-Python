@@ -12,14 +12,14 @@ names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
 duplicates = []  # Return the list of duplicates in this data structure
-Bst = BSTNode("")
+bst= BSTNode("")
 
 # Replace the nested for loops below with your improvements
 for name in names_1:
-    Bst.insert(name)
+    bst.insert(name)
 
 for name in names_2:
-    if Bst.contains(name):
+    if bst.contains(name):
         duplicates.append(name)
 
 end_time = time.time()
